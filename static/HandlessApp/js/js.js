@@ -93,9 +93,9 @@ function handleSalvar() {
         let arrayCompara = [];
         Object.values(element.ExprAction).forEach(Exp => {
             if (Exp.optExpressions.value == 'piscouDireito' || Exp.optExpressions.value == 'piscouEsquerdo') {
-                arrayCompara.push('>');
-            } else {
                 arrayCompara.push('<');
+            } else {
+                arrayCompara.push('>');
             }
             arrayExpression.push(Exp.optExpressions.value);
             arrayThreshold.push(Exp.threshold.value);
