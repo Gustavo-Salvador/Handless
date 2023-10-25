@@ -1,0 +1,277 @@
+#actions {
+    overflow-y: auto;
+    overflow-x: hidden;
+    max-height: calc(100vh - 80px);
+}
+#buttons {
+    width: 100%;
+    height: 40px;
+    position:fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+}
+#divHeader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    font-size: 22px;
+    font-family: Arial;
+    text-align: center;
+    background-color: lightcyan;
+    margin-bottom: 5px;
+}
+#inputControlaMouseDiv {
+    width: fit-content;
+    height: 40px;
+    position:fixed;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    bottom: 0;
+    right: 0;
+    padding-right: 10px;
+}
+#logo {
+    height: 80%;
+}
+
+.actionActionOpt{
+    margin-right: 5px;
+}
+.actionHolder {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border-radius: 7px;
+    overflow: hidden;
+    border-style: solid;
+    border-width: 0.5px;
+    padding-bottom: 5px;
+    max-width: calc(100vw - 23px);
+    width: calc(100vw - 23px);
+}
+.actionTitle{
+    position: relative;
+    display:flex;
+    align-items: center;
+    height: 30px;
+    background-color: rgb(223, 223, 223);
+}
+.actionTitleText {
+    float: left;
+    margin-right: 5px;
+    margin-left: 10px;
+    font-weight: bold;
+}
+.addAcao {
+    vertical-align: middle;
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    color: limegreen;
+    margin: 0;
+}
+.celulaExpression {
+    width: auto;
+}
+.celulaTecla, .celulaTeclaDestroyer, .teclaHolder {
+    cursor: pointer;
+    vertical-align: middle;
+}
+.destroyActionDiv {
+    position: absolute;
+    right: 5px;
+    cursor: pointer;
+}
+.destroyExpressionDiv{
+    position: absolute;
+    right: 5px;
+    top: -8px;
+    cursor: pointer;
+}
+.destroyActionText {
+    color: red;
+}
+.divAddAcao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    width: 80px;
+    height: 100px;
+    border-style: dotted;
+    border-width: 5px;
+    border-radius: 20px;
+    border-color: gray;
+    vertical-align: middle;
+    cursor: pointer;
+}
+.divAddExpression {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5px;
+    margin-top: 5px;
+    width: 80px;
+    height: 100px;
+    border-style: dashed;
+    border-width: 3px;
+    border-radius: 20px;
+    border-color: gray;
+    vertical-align: middle;
+    cursor: pointer;
+}
+.divBody {
+    width: 100vw;
+}
+.divExpression {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 20px;
+    padding: 15px;
+    width: min-content;
+    margin-left: 5px;
+    margin-top: 5px;
+    margin-right: 10px;
+}
+.actionExpressionsDiv {
+    overflow-x: visible;
+}
+.imgExpressions {
+    margin-bottom: 5px;
+}
+.paramDiv {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    overflow-x: visible;
+    height: 30px;
+    box-sizing:border-box;
+}
+.paramColunaAddText, .teclaDestroyer {
+    margin: 0;
+}
+.paramColunaAddText {
+    cursor: pointer;
+    color: limegreen;
+    font-weight: bolder !important;
+    font-size: 20px;
+}
+.paramTable {
+    width: auto !important;
+}
+.scrollParamDiv {
+    align-self: flex-start;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    height: 30px;
+}
+.scrollParamDiv:hover {
+    overflow-x: auto;
+    height: 42px;
+}
+.scrollExpressionDiv {
+    align-self: flex-start;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    height: auto;
+}
+.scrollExpressionDiv:hover {
+    overflow-x: auto;
+    height: calc(auto + 12px);
+}
+.teclaDestroyer {
+    color: red;
+    font-weight: bolder !important;
+    font-size: 20px;
+}
+.textParam {
+    margin: 0 5px 0 0;
+    width: fit-content;
+}
+.thresholddiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.threshold {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 20px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    height: 10px;
+}
+.threshold:hover {
+    opacity: 1;
+}
+.threshold::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    background: #04AA6D;
+    cursor: pointer;
+    border-radius:25px;
+}
+.threshold::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    background: #04AA6D;
+    cursor: pointer;
+}
+.textThreshold {
+    margin-top: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    overflow-x: hidden;
+}
+input[type=button] {
+    margin-right: 3px;
+    margin-left: 3px;
+    background-color: #e8f1ff;
+    cursor: pointer;
+    border-radius: 4px;
+    box-shadow: 0px 2px;
+    transition: 200ms;
+}
+input[type=button]:hover {
+    background-color: #c7e2ff;
+}
+input[type=button]:active {
+    background-color: #75b7ff;
+    box-shadow: 0px 1px;
+    transform: translateY(1px);
+}
+p {
+    position: relative;
+    margin-right: 5px;
+}
+table {
+    width: 100%;
+}
+th {
+    width: 100%;
+    height: 15px;
+    font-size: 16px;
+    font-family: Arial;
+    text-align: center;
+}

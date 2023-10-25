@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Handless</title>
+    
+    <link rel="stylesheet" href="{{ url_for('static',filename='HandlessApp/css/style.css') }}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simple-keyboard@latest/build/css/index.css">
+    
+    <script src="https://cdn.jsdelivr.net/npm/simple-keyboard@latest/build/index.js"></script>
+    <script src="https://kit.fontawesome.com/9384518654.js" crossorigin="anonymous"></script>
+    
+    <script src="{{ url_for('static',filename='default/js/aguarde.js') }}"></script>
+    <script src="{{ url_for('static',filename='HandlessApp/js/js.js') }}"></script>
+</head>
+<body onload="getAcoes()">
+    <div id="divHeader">
+        <p id="tituloApp"> HANDLESS </p>
+        <img id="logo" src="{{ url_for('static',filename='HandlessApp/img/logo.png') }}">
+    </div>
+    <div id="divBody">
+        <div id="cam"></div>
+        <div id="actions">
+            <table id="tableConfig">
+                <th>Ações</th>
+            </table>
+        </div>
+        <div id="buttons">
+            <input type="button" id="cancelarBtn" name="cancelarBtn" value="cancelar" onclick="handleCancelar();">
+            <input type="button" id="salvarBtn" name="salvarBtn" value="salvar" onclick="handleSalvar();">
+            <input type="button" id="calibrarBtn" name="calibrarBtn" value="calibrar" onclick="handleCalibra();">
+            <input type="button" id="calibrarMouseBtn" name="calibrarMouseBtn" value="calibrar mouse" onclick="handleCalibraMouse();">
+            <input type="button" id="paraProgramaBtn" name="paraProgramaBtn" value="Parar a execução" onclick="handleParaPrograma();">
+        </div>
+        <div id="inputControlaMouseDiv">
+            <input type="checkbox" id="inputControlaMouse" name="inputControlaMouse" value="controlamouse" onchange="handleControlaMouse();">
+            <label for="inputControlaMouse" id="inputControlaMouseText">Mover mouse com o pescoço</label>
+            <script type="text/javascript">
+                getControleMouse();
+            </script>
+        </div>
+    </div>
+</body>
+</html>
