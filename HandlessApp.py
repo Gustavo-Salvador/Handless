@@ -1,5 +1,9 @@
-from flask import Flask, render_template, url_for, request
+import os
 import json
+try:
+    from flask import Flask, render_template, url_for, request
+except:
+    os.system('pip install flask')
 
 app = Flask(__name__)
 
